@@ -8,9 +8,17 @@ class BooksController < ApplicationController
   end  
 
   def new
+    @book = Book.new
   end
 
   def create
+    @book = Book.new(params.require(:book).permit(:title))
+    if @book.save
+      flash[:notice] = "Book successfully added!"
+      redirect_to books_path
+    else
+      render('new')
+    end
   end
 
   def edit

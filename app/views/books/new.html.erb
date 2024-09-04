@@ -1,2 +1,17 @@
-<h1>Books#new</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+<%= link_to("Back to Homepage", books_path) %>
+
+<h2>Add New Book</h2>
+
+<%= form_for(@book) do |f| %>
+	<table>
+		<tr>
+			<th align="left">Book Title</th>
+			<td><%= f.text_field(:title) %></td>
+		</tr>
+	</table>
+
+	<div>
+		<%= f.submit("Add Book") %>
+	</div>
+
+<% end %>
