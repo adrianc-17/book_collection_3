@@ -72,3 +72,12 @@ group :test do
 end
 
 gem 'yaml_db'
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'selenium-webdriver'
+end
