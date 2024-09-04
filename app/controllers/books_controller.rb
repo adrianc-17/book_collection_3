@@ -22,14 +22,27 @@ class BooksController < ApplicationController
   end
 
   def edit
+    @book = Book.find(params[:id])
   end
 
   def update
+    @book = Book.find(params[:id])
+    if @book.update(params.require(:book).permit(:title))
+      flash[:notice] = "Book successfully updated!"
+      redirect_to books_path
+    else
+      render('edit')
+    end    
   end
 
   def delete
+    @book = Book.find(params[:id])
   end
 
   def destroy
+    @book = Book.find(params[:id])
+    @book.destroy
+    flash[:notice] = "Book successfully deleted!"
+    redirect_to books_path    
   end
 end
