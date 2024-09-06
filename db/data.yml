@@ -1,0 +1,42 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2024-09-04 04:37:32.477339000 Z
+    - 2024-09-04 04:37:32.477339000 Z
+
+---
+books:
+  columns:
+  - id
+  - title
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Hello 2
+    - 2024-09-04 04:38:52.940953000 Z
+    - 2024-09-04 04:39:00.597426000 Z
+  - - 3
+    - The Lord Of The Rings
+    - 2024-09-06 14:01:35.834151000 Z
+    - 2024-09-06 14:01:35.834151000 Z
+  - - 4
+    - Of Mice And Men
+    - 2024-09-06 14:01:49.888362000 Z
+    - 2024-09-06 14:01:49.888362000 Z
+  - - 5
+    - A Game Of Thrones
+    - 2024-09-06 14:21:48.780146000 Z
+    - 2024-09-06 14:21:48.780146000 Z
+  - - 6
+    - A Game Of Thrones 2
+    - 2024-09-06 14:25:24.912817000 Z
+    - 2024-09-06 14:25:24.912817000 Z
