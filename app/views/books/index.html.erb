@@ -7,11 +7,17 @@
 <table style="width: 100%">
 	<tr>
 		<th align="left">Book Title</th>
+		<th align="left">Author</th>
+		<th align="left">Price</th>
+		<th align="left">Date Published</th>
 		<th align="left">Actions</th>
 	</tr>
 	<% @books.each do |book| %>
 	<tr>
 		<td><%= book.title %></td>
+		<td><%= book.author %></td>
+		<td><%= book.price %></td>
+		<td><%= book.published_date %></td>
 		<td>
 			<%= link_to('Show', book_path(book)) %>
 			<%= link_to('Edit', edit_book_path(book)) %>
