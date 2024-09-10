@@ -1,9 +1,17 @@
-<h1>New user</h1>
+<%= link_to("Back to Homepage", users_path) %>
 
-<%= render "form", user: @user %>
+<h2>Add New User</h2>
 
-<br>
+<%= form_for(@user) do |f| %>
+	<table>
+		<tr>
+			<th align="left">Username</th>
+			<td><%= f.text_field :username, id:"Username" %></td>
+		</tr>
+	</table>
 
-<div>
-  <%= link_to "Back to users", users_path %>
-</div>
+	<div>
+		<%= f.submit("Add User") %>
+	</div>
+
+<% end %>
